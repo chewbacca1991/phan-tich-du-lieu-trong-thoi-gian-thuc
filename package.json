@@ -1,7 +1,7 @@
 {
   "name": "phan-tich-du-lieu-trong-thoi-gian-thuc",
   "version": "1.0.0",
-  "description": "Ứng dụng phân tích dữ liệu trong thời gian thực",
+  "description": "Real-time data analysis application",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
