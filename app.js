@@ -10,13 +10,13 @@ app.get('/get-data', async (req, res) => {
     const data = await fetchData('http://api.example.com/data');
     if (data) {
         const report = generateReport(data);
-        checkAndAlert(data, 100); // Giả định 100 là ngưỡng báo động
+        checkAndAlert(data, 100); // Assuming 100 is the alert threshold
         res.send(report);
     } else {
-        res.status(500).send('Không thể lấy dữ liệu.'); // Fixed typo in Vietnamese
+        res.status(500).send('Unable to fetch data.'); // Fixed typo in Vietnamese
     }
 });
 
 app.listen(PORT, () => {
-    console.log(`Server đang chạy trên http://localhost:${PORT}`);
+    console.log(`Server is running at http://localhost:${PORT}`);
 });
