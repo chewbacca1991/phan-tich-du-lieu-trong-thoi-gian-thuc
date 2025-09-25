@@ -1,5 +1,5 @@
 function generateReport(data) {
-    // Xử lý dữ liệu và tạo báo cáo
+    // Process data and generate report
     const report = `Báo cáo dữ liệu: ${JSON.stringify(data)}`;
     return report;
 }
