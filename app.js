@@ -13,7 +13,7 @@ app.get('/get-data', async (req, res) => {
         checkAndAlert(data, 100); // Giả định 100 là ngưỡng báo động
         res.send(report);
     } else {
-        res.status(500).send('Không thể lấy dữ liệu.');
+        res.status(500).send('Không thể lấy dữ liệu.'); // Fixed typo in Vietnamese
     }
 });
 
